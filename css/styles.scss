@@ -117,6 +117,14 @@ footer {
         }
     }
 }
+
+.liMainNav:focus {
+  border-bottom: none;
+  background-color: #fff;
+  position: relative;
+  top: 3px;
+}
+
 /* - - - - - - - --  -mid-size view media queries - - - - - - - - - - */
 @media screen and (min-width: 510px) {
     h1 {
@@ -209,6 +217,7 @@ footer {
               text-align: center;
               display: inline-block;
               padding: 0 2%;
+              overflow: hidden;
                 li {
                     float: none;
                 }
