@@ -1,0 +1,41 @@
+@media screen and (min-width: 510px) {
+    .mainNav {
+        li:first-child {
+            margin-left: 15%;
+        }
+        li:last-child {
+            margin-right: 15%;
+        }
+        li {
+            margin: 0 0.5%;
+            border: solid #CAD4DA 0.1em;
+            border-bottom: none;
+            width: 13%;
+            box-sizing: border-box;
+            padding: 1em 0;
+        }
+    }
+    .divFoodMenu {
+        margin-left: -3%;
+
+        li:first-child {
+            float: left;
+            margin:0 3% 0 0;
+        }
+        h3 {
+            text-align: left;
+            padding-left: 1em;
+        }
+        p {
+            text-align: left;
+            padding-left: 1em;
+        }
+        main {
+            &::after {
+                display: block;
+                content: '';
+                clear: both;
+            }
+        }
+    }
+}

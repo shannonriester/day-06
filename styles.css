@@ -1,0 +1,173 @@
+/* - - - - -variables - - - - -*/
+body, main, footer, .ulMainNav {
+  margin: 0;
+  padding: 0; }
+
+/* - - --  Extend - - - -*/
+ul i, footer a {
+  text-decoration: none;
+  color: #47A3DA; }
+
+/*- - - - - - - SCSS- - - - - - - */
+body {
+  text-align: center;
+  font-family: Arial, Lucida, Helvetica;
+  color: #47A3DA;
+  font-weight: 100; }
+
+main {
+  margin-bottom: 10em; }
+
+.divHeaderLeft {
+  margin-top: 2.5em; }
+
+h1 {
+  margin: 0 auto;
+  width: 75%; }
+
+ul {
+  list-style-type: none; }
+  ul li {
+    display: inline; }
+  ul i:hover {
+    font-weight: bold;
+    opacity: 0.6; }
+
+.ulSideNav {
+  margin: 2em 2em 4em 0;
+  display: inline-flex;
+  font-size: 1rem; }
+  .ulSideNav li {
+    padding: 0 0.8em; }
+
+.mainNav {
+  margin-bottom: 1.5em; }
+  .mainNav i {
+    color: #CAD4DA; }
+
+.ulMainNav {
+  margin: 0;
+  border-bottom: solid 0.1em; }
+  .ulMainNav::after {
+    display: block;
+    content: '';
+    clear: both; }
+  .ulMainNav li {
+    float: left;
+    width: 20%;
+    border-right: solid 0.1em #CAD4DA;
+    border-top: solid 0.1em #CAD4DA;
+    padding: 1em 0;
+    box-sizing: border-box; }
+
+.divFoodMenu ul {
+  margin: 0; }
+.divFoodMenu li:first-child {
+  background: #47A3DA;
+  width: 10vw;
+  padding: 2em 6em;
+  display: inline-block;
+  margin: 1.5em 0 1em; }
+.divFoodMenu i {
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 5.5em; }
+.divFoodMenu h3 {
+  font-size: 1.3em;
+  margin: 1em 0; }
+.divFoodMenu li:last-child {
+  font-size: 1em; }
+
+footer span {
+  color: #CAD4DA; }
+
+/* psudo classes */
+.mainNav li:hover {
+  border: solid #47A3DA 0.1em;
+  border-bottom: none;
+  background-color: #fff;
+  position: relative;
+  top: 3px; }
+  .mainNav li:hover i {
+    color: #47A3DA; }
+
+/* - - - - - - - --  -mid-size view media queries - - - - - - - - - - */
+@media screen and (min-width: 510px) {
+  h1 {
+    width: 100%; }
+
+  .mainNav li:first-child {
+    margin-left: 15%; }
+  .mainNav li:last-child {
+    margin-right: 15%; }
+  .mainNav li {
+    margin: 0 0.5%;
+    border: solid #CAD4DA 0.1em;
+    border-bottom: none;
+    width: 13%;
+    box-sizing: border-box;
+    padding: 1em 0; }
+
+  .divFoodMenu {
+    margin: 4em 0; }
+    .divFoodMenu li:first-child {
+      float: left;
+      margin: 0 3% 0 0; }
+    .divFoodMenu h3 {
+      text-align: left;
+      padding-left: 1em; }
+    .divFoodMenu p {
+      text-align: left;
+      padding-left: 1em; }
+    .divFoodMenu main::after {
+      display: block;
+      content: '';
+      clear: both; } }
+/*- - - - - - - -full size view - - - - - - - - */
+@media screen and (min-width: 840px) {
+  .divHeaderLeft {
+    float: left;
+    margin: 0;
+    width: 60%;
+    text-align: left; }
+
+  .ulSideNav {
+    float: right;
+    padding-top: 2em; }
+
+  div::after {
+    display: block;
+    content: '';
+    clear: both; }
+
+  nav::after {
+    display: block;
+    content: '';
+    clear: both; }
+
+  header {
+    padding: 2em; }
+
+  .divFoodMenu {
+    margin: 4em 0; }
+    .divFoodMenu li:first-child {
+      margin: 0 -3% 0 0; }
+    .divFoodMenu li:last-child {
+      margin-right: 3%; }
+    .divFoodMenu li {
+      margin: 0; }
+
+  div {
+    width: 27%;
+    text-align: center;
+    display: inline-block;
+    padding: 0 2%; }
+    div li {
+      float: none; }
+
+  ul {
+    box-sizing: border-box;
+    padding: 0; } }
+
+/*# sourceMappingURL=styles.css.map */
