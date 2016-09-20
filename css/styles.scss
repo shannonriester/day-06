@@ -49,11 +49,18 @@ ul {
     i {
         color: $secondary-color;
     }
+    span {
+      display: none;
+    }
 }
-.ulMainNav {
-    margin: 0;
-    border-bottom: solid 0.1em;
-    &::after {
+
+.contentSection {
+  div {
+    width: 10vw;
+      .ulMainNav {
+          margin: 0;
+            border-bottom: solid 0.1em;
+              &::after {
         display: block;
         content: '';
         clear: both;
@@ -66,36 +73,34 @@ ul {
         padding: 1em 0;
         box-sizing: border-box;
     }
-    //
-    // li:last-child {
-    //   border-right: none;
-    // }
 }
-.divFoodMenu {
-    ul {
-        margin: 0;
-    }
-    li:first-child {
-        background: $main-color;
+
+.i-container {
+        background: red;
         width: 10vw;
         padding: 2em 6em;
         display: inline-block;
         margin: 1.5em 0 1em;
+        padding: 2rem;
     }
-    i {
-        color: #fff;
+
+    .contentSection{
+      i {
+        // color: #fff;
         text-align: center;
         border-radius: 50%;
+        border: solid red 1rem;
         font-size: 5.5em;
     }
     h3 {
         font-size: 1.3em;
         margin: 1em 0;
     }
-    li:last-child {
+    div:last-child {
         font-size: 1em;
     }
 }
+
 footer {
     a {
         @extend %navIconLinks;
@@ -112,6 +117,7 @@ footer {
         background-color: #fff;
         position: relative;
         top: 3px;
+
         & i {
             color: $main-color;
         }
@@ -124,6 +130,8 @@ footer {
   position: relative;
   top: 3px;
 }
+
+
 
 /* - - - - - - - --  -mid-size view media queries - - - - - - - - - - */
 @media screen and (min-width: 510px) {
@@ -146,9 +154,11 @@ footer {
             padding: 1em 0;
         }
     }
-    .divFoodMenu {
+
+
+    section {
         margin: 4em 0;
-        li:first-child {
+        div:first-child {
             float: left;
             margin: 0 3% 0 0;
         }
@@ -194,23 +204,41 @@ footer {
     header {
         padding: 2em;
     }
-    // main {
+    .ulMainNav {
+      a {
+        text-decoration: none;
+        color: $main-color;
+      }
 
-    .divFoodMenu {
+      span {
+        display: inline;
+        text-decoration: none;
+        color: $secondary-color;
+        padding-left: .2em;
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+
+      li:hover {
+        color: $main-color;
+      }
+
+    }
+
+    .section {
           margin: 4em 0;
-          li:first-child {
+          div:first-child {
               margin: 0 -3% 0 0;
           }
 
 
-        li:last-child {
+        div:last-child {
             margin-right: 3%;
         }
 
 
-        li {
-            margin: 0;
-        }
       }
             div{
               width: 27%;
@@ -218,15 +246,15 @@ footer {
               display: inline-block;
               padding: 0 2%;
               overflow: hidden;
-                li {
+                i, h3, p {
                     float: none;
                 }
             }
 
-      ul {
-        // display: inline;
-        box-sizing: border-box;
-        padding: 0;
-      }
+      // ul {
+      //   // display: inline;
+      //   box-sizing: border-box;
+      //   padding: 0;
+      // }
 
 }

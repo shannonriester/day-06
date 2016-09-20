@@ -44,6 +44,8 @@ ul {
   margin-bottom: 1.5em; }
   .mainNav i {
     color: #CAD4DA; }
+  .mainNav span {
+    display: none; }
 
 .ulMainNav {
   margin: 0;
@@ -91,6 +93,12 @@ footer span {
   top: 3px; }
   .mainNav li:hover i {
     color: #47A3DA; }
+
+.liMainNav:focus {
+  border-bottom: none;
+  background-color: #fff;
+  position: relative;
+  top: 3px; }
 
 /* - - - - - - - --  -mid-size view media queries - - - - - - - - - - */
 @media screen and (min-width: 510px) {
@@ -149,6 +157,19 @@ footer span {
   header {
     padding: 2em; }
 
+  .ulMainNav a {
+    text-decoration: none;
+    color: #47A3DA; }
+  .ulMainNav span {
+    display: inline;
+    text-decoration: none;
+    color: #CAD4DA;
+    padding-left: .2em; }
+    .ulMainNav span:hover {
+      color: #47A3DA; }
+  .ulMainNav li:hover {
+    color: #47A3DA; }
+
   .divFoodMenu {
     margin: 4em 0; }
     .divFoodMenu li:first-child {
@@ -162,7 +183,8 @@ footer span {
     width: 27%;
     text-align: center;
     display: inline-block;
-    padding: 0 2%; }
+    padding: 0 2%;
+    overflow: hidden; }
     div li {
       float: none; }
 
